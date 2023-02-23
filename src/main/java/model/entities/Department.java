@@ -25,10 +25,10 @@ public class Department implements Serializable {
         this.name = name;
     }
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Department that = (Department) o;
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Department that = (Department) obj;
         return id.equals(that.id);
     }
     @Override
